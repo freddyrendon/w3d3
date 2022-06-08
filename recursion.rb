@@ -105,13 +105,46 @@ def bsearch(arr, target_num)
 
 end
 
-p bsearch([1,3, 4, 5, 9], 5)
-p bsearch([1,2,3,4, 5 ,6 ],6 )
-arr = [1,2,3,4,5,6,7,8,9,10,11]
-p bsearch([2,4,6,8,10], 6)
-p bsearch(arr, 8)
-p bsearch([1,2,3,4,5,7], 6)
+# p bsearch([1,3, 4, 5, 9], 5)
+# p bsearch([1,2,3,4, 5 ,6 ],6 )
+# arr = [1,2,3,4,5,6,7,8,9,10,11]
+# p bsearch([2,4,6,8,10], 6)
+# p bsearch(arr, 8)
+# p bsearch([1,2,3,4,5,7], 6)
 
     # arr1 = 0 ... arr.length/2
     # median = arr[arr.length/2] 
     # arr2 = arr.length/2 .. -1 
+
+# def merge_sort(arr, arr2= [])
+#   return [arr] if arr.length == 1
+#   median = arr.length/2
+#   arr1 = arr[0...median]
+#   arr2 = arr[median..-1]
+  
+#   merge_sort(arr1, arr2)
+
+# end
+
+# def merge(arr1, arr2)
+# new_arr = []
+# (0...arr1.length).each do |i|
+#   if arr1[i] > arr2[i]
+# end 
+
+# end 
+
+def subsets(arr)
+  return [] if arr.length == 0
+  num = 0
+  while num < arr.length
+    p arr
+    num += 1
+    subsets(arr[num..-1]) 
+    
+  end
+
+
+end 
+
+p subsets([1,2,3])
